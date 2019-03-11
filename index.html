@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="index.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+    
+</head>
+<body>
+    <div id="name">
+        <div>
+            <a href="#" onclick="deleteit(this);return false;">点我</a>
+        </div>
+    </div>
+    <script>
+    var name = document.querySelector('#name');
+    function deleteit(obj){
+        var div = obj.parentNode.nodeName;
+        console.log(div)
+    }
+    </script>
+</body> 
+</html>
